@@ -16,17 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-iP-9Wa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-iP-9Wa">
                                 <rect key="frame" x="196" y="316" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homebackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-XH-v75">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZL-f8-0KG">
+                                <rect key="frame" x="298" y="90" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upE-l1-PFP">
+                                <rect key="frame" x="196" y="90" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rmi-XH-v75" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3dO-i0-PES"/>
+                            <constraint firstItem="upE-l1-PFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="196" id="7tQ-za-Oty"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RZL-f8-0KG" secondAttribute="bottom" constant="693" id="HJQ-Sr-nCG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZL-f8-0KG" secondAttribute="trailing" constant="11" id="ImI-xv-elJ"/>
+                            <constraint firstItem="upE-l1-PFP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="PYS-kG-3Qz"/>
+                            <constraint firstItem="Rmi-XH-v75" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PhN-bd-jnA"/>
+                            <constraint firstItem="fBA-iP-9Wa" firstAttribute="top" secondItem="upE-l1-PFP" secondAttribute="bottom" constant="191" id="Vh1-R7-10U"/>
+                            <constraint firstItem="RZL-f8-0KG" firstAttribute="leading" secondItem="upE-l1-PFP" secondAttribute="trailing" constant="18" id="WQ1-dk-NG0"/>
+                            <constraint firstItem="RZL-f8-0KG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="cvS-qf-qnx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rmi-XH-v75" secondAttribute="bottom" id="mgg-mX-uzc"/>
+                            <constraint firstItem="RZL-f8-0KG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="298" id="rmV-5w-BrD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rmi-XH-v75" secondAttribute="trailing" id="ttg-Gu-26j"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button_login" destination="upE-l1-PFP" id="gos-gN-ivE"/>
+                        <outlet property="button_signUp" destination="RZL-f8-0KG" id="8cz-h2-9PK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,6 +64,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="homebackground" width="612" height="612"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
