@@ -17,6 +17,7 @@
 		AB1559E52B85CD1F00440790 /* pizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1559E42B85CD1F00440790 /* pizzaTests.swift */; };
 		AB1559EF2B85CD1F00440790 /* pizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1559EE2B85CD1F00440790 /* pizzaUITests.swift */; };
 		AB1559F12B85CD1F00440790 /* pizzaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1559F02B85CD1F00440790 /* pizzaUITestsLaunchTests.swift */; };
+		AB5071942B8DAC7B006C4727 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5071932B8DAC7B006C4727 /* LoginScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AB1559EA2B85CD1F00440790 /* pizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1559EE2B85CD1F00440790 /* pizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaUITests.swift; sourceTree = "<group>"; };
 		AB1559F02B85CD1F00440790 /* pizzaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB5071932B8DAC7B006C4727 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				AB1559CA2B85CD1D00440790 /* AppDelegate.swift */,
 				AB1559CC2B85CD1D00440790 /* SceneDelegate.swift */,
 				AB1559CE2B85CD1D00440790 /* ViewController.swift */,
+				AB5071932B8DAC7B006C4727 /* LoginScreenViewController.swift */,
 				AB1559D02B85CD1D00440790 /* Main.storyboard */,
 				AB1559D62B85CD1E00440790 /* Assets.xcassets */,
 				AB1559D82B85CD1E00440790 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				AB1559D52B85CD1D00440790 /* pizza.xcdatamodeld in Sources */,
 				AB1559CF2B85CD1D00440790 /* ViewController.swift in Sources */,
 				AB1559CB2B85CD1D00440790 /* AppDelegate.swift in Sources */,
+				AB5071942B8DAC7B006C4727 /* LoginScreenViewController.swift in Sources */,
 				AB1559CD2B85CD1D00440790 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
